@@ -1,11 +1,19 @@
-/* Base Styles */
+
+/* =========================
+   Base Styles
+   ========================= */
+
 body {
   font-family: 'Oxygen', sans-serif;
-  background-color: #fff;
+  font-size: 16px;
   color: #333;
+  background-color: #fff;
 }
 
-/* Navbar styling */
+/* =========================
+   Navbar
+   ========================= */
+
 .navbar-default {
   background-color: #d3d3d3;
   border: none;
@@ -14,14 +22,22 @@ body {
 }
 
 .navbar-brand {
+  height: auto;
+  padding: 15px;
   font-size: 30px;
+  font-weight: 700;
   color: #333 !important;
-  font-weight: bold;
 }
 
-/* Navbar toggle button styling */
+/* Mobile toggle button */
+
 .navbar-default .navbar-toggle {
-  border-color: #333;
+  border: 1px solid #333;
+  margin-top: 12px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -29,45 +45,118 @@ body {
   background-color: #bcbcbc;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #333;
-}
+/* =========================
+   Mobile Dropdown
+   ========================= */
 
-/* Mobile Dropdown menu styling */
 #collapsable-nav {
   background-color: #d3d3d3;
-  border-top: 1px solid #bcbcbc;
 }
 
-#collapsable-nav ul li a {
-  color: #333;
-  text-align: center;
-  font-size: 18px;
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#nav-list li {
   border-bottom: 1px solid #bcbcbc;
 }
 
-#collapsable-nav ul li a:hover {
+#nav-list li:last-child {
+  border-bottom: none;
+}
+
+#nav-list li a {
+  padding: 12px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+}
+
+#nav-list li a:hover,
+#nav-list li a:focus {
   background-color: #bcbcbc;
   color: #000;
 }
 
-/* Page Heading styling */
+/* =========================
+   Page Heading
+   ========================= */
+
 #menu-heading {
-  font-weight: bold;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
 }
 
-/* Really Tall Section styling */
+/* =========================
+   Menu Section
+   ========================= */
+
 #menu-section {
+  min-height: 1000px;
+  margin-bottom: 50px;
+  padding: 20px;
   background-color: #bcbcbc;
   border: 1px solid #999;
-  padding: 20px;
-  margin-bottom: 50px;
-  min-height: 1000px;
 }
 
 #menu-section h2 {
-  text-align: center;
   margin-top: 0;
-  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#menu-section p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* =========================
+   Desktop and Tablet
+   ========================= */
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: none;
+  }
+
+  #collapsable-nav {
+    display: none !important;
+  }
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 767px) {
+  .navbar > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #collapsable-nav {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-right: 0;
+    padding-left: 0;
+    border-top: 1px solid #bcbcbc;
+  }
+
+  #nav-list {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  #menu-heading {
+    font-size: 32px;
+  }
+
+  #menu-section {
+    padding: 15px;
+  }
 }
