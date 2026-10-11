@@ -1,1 +1,73 @@
-/* Module 3 Solution */
+/* Base Styles */
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar styling */
+.navbar-default {
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: #333 !important;
+  font-weight: bold;
+}
+
+/* Navbar toggle button styling */
+.navbar-default .navbar-toggle {
+  border-color: #333;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #bcbcbc;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+/* Mobile Dropdown menu styling */
+#collapsable-nav {
+  background-color: #d3d3d3;
+  border-top: 1px solid #bcbcbc;
+}
+
+#collapsable-nav ul li a {
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+#collapsable-nav ul li a:hover {
+  background-color: #bcbcbc;
+  color: #000;
+}
+
+/* Page Heading styling */
+#menu-heading {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Really Tall Section styling */
+#menu-section {
+  background-color: #bcbcbc;
+  border: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 50px;
+  min-height: 1000px;
+}
+
+#menu-section h2 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+}
