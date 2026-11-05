@@ -1,118 +1,224 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Food, LLC</title>
+    <title>Food, LLC - Our Menu</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700"
-        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    >
 
-  <!-- Bootstrap 3 CSS -->
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Oxygen:400,700"
+        rel="stylesheet"
+    >
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container-fluid">
+    <!-- Navbar -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
 
-        <div class="navbar-header">
+                <div class="navbar-header">
 
-          <!-- Company Name -->
-          <a href="index.html" class="navbar-brand">
-            Food, LLC
-          </a>
+                    <!-- Mobile Toggle Button -->
+                    <button
+                        type="button"
+                        class="navbar-toggle collapsed visible-xs"
+                        data-toggle="collapse"
+                        data-target="#collapsable-nav"
+                        aria-expanded="false"
+                        aria-controls="collapsable-nav"
+                    >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-          <!-- Mobile Menu Button -->
-          <button type="button"
-                  class="navbar-toggle collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapsable-nav"
-                  aria-expanded="false"
-                  aria-controls="collapsable-nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+                    <!-- Brand -->
+                    <a href="index.html" class="navbar-brand">
+                        <span>Food, LLC</span>
+                    </a>
+
+                </div>
+
+                <!-- Mobile Dropdown Menu -->
+                <div
+                    id="collapsable-nav"
+                    class="collapse navbar-collapse"
+                >
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+                        <li class="visible-xs">
+                            <a href="#chicken">Chicken</a>
+                        </li>
+
+                        <li class="visible-xs">
+                            <a href="#beef">Beef</a>
+                        </li>
+
+                        <li class="visible-xs">
+                            <a href="#sushi">Sushi</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Page Heading -->
+        <h1 id="menu-heading" class="text-center">
+            Our Menu
+        </h1>
+
+        <div class="row">
+
+            <!-- Chicken Section -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section id="chicken" class="menu-section">
+
+                    <h3 id="chicken-title" class="text-center">
+                        Chicken
+                    </h3>
+
+                    <p>
+                        Chicken is one of the most popular ingredients in
+                        many dishes around the world. It can be prepared
+                        in different ways, including grilling, frying,
+                        roasting, and baking.
+
+                        <br><br>
+
+                        A well-prepared chicken dish can be both delicious
+                        and satisfying. It is commonly served with rice,
+                        vegetables, sauces, and other side dishes.
+
+                        <br><br>
+
+                        Whether it is fried chicken, grilled chicken, or
+                        chicken soup, this versatile ingredient offers
+                        many possibilities for a good meal.
+
+                        <br><br>
+
+                        Chicken dishes are enjoyed in many cultures because
+                        they are easy to prepare and can be combined with
+                        different flavors and ingredients.
+                    </p>
+
+                    <a href="#menu-heading" class="back-to-top">
+                        Back to Top
+                    </a>
+
+                </section>
+            </div>
+
+            <!-- Beef Section -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section id="beef" class="menu-section">
+
+                    <h3 id="beef-title" class="text-center">
+                        Beef
+                    </h3>
+
+                    <p>
+                        Beef is a widely enjoyed meat that is used in
+                        countless recipes. It can be cooked as a steak,
+                        burger, stew, or stir-fry.
+
+                        <br><br>
+
+                        Different cooking methods bring out different
+                        flavors and textures. Grilling gives beef a
+                        smoky flavor, while slow cooking makes it tender
+                        and rich.
+
+                        <br><br>
+
+                        Beef is often paired with rice, potatoes,
+                        vegetables, and various sauces. It is also a
+                        common ingredient in many traditional dishes.
+
+                        <br><br>
+
+                        From simple home-cooked meals to restaurant
+                        specialties, beef remains a popular choice
+                        for people who enjoy hearty food.
+                    </p>
+
+                    <a href="#menu-heading" class="back-to-top">
+                        Back to Top
+                    </a>
+
+                </section>
+            </div>
+
+            <!-- Sushi Section -->
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <section id="sushi" class="menu-section">
+
+                    <h3 id="sushi-title" class="text-center">
+                        Sushi
+                    </h3>
+
+                    <p>
+                        Sushi is a traditional Japanese dish commonly
+                        made with vinegared rice and different
+                        ingredients such as seafood, vegetables,
+                        and sometimes tropical fruits.
+
+                        <br><br>
+
+                        Some popular types of sushi include nigiri,
+                        maki, and temaki. Each type has its own
+                        preparation style and presentation.
+
+                        <br><br>
+
+                        Sushi is often served with soy sauce,
+                        wasabi, and pickled ginger. These additions
+                        provide different flavors that complement
+                        the ingredients.
+
+                        <br><br>
+
+                        Today, sushi is enjoyed around the world.
+                        It combines careful preparation, fresh
+                        ingredients, and a variety of flavors.
+                    </p>
+
+                    <a href="#menu-heading" class="back-to-top">
+                        Back to Top
+                    </a>
+
+                </section>
+            </div>
 
         </div>
 
-        <!-- Mobile Dropdown Menu -->
-        <div id="collapsable-nav"
-             class="collapse navbar-collapse">
-          <ul id="nav-list"
-              class="nav navbar-nav visible-xs">
-            <li><a href="#chicken">Chicken</a></li>
-            <li><a href="#beef">Beef</a></li>
-            <li><a href="#sushi">Sushi</a></li>
-          </ul>
-        </div>
+    </main>
 
-      </div>
-    </nav>
-  </header>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-  <!-- Main Content -->
-  <main class="container">
-
-    <h1 id="menu-heading" class="text-center">
-      Our Menu
-    </h1>
-
-    <!-- Responsive Grid -->
-    <div class="row">
-      <div class="col-xs-12">
-
-        <section id="menu-section">
-
-          <h2 id="chicken">Chicken</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-
-        </section>
-
-      </div>
-    </div>
-
-  </main>
-
-  <!-- JavaScript: jQuery must load before Bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
