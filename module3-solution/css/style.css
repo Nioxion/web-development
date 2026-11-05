@@ -1,162 +1,185 @@
-
-/* =========================
-   Base Styles
-   ========================= */
+/* ==============================
+   GENERAL STYLES
+============================== */
 
 body {
-  font-family: 'Oxygen', sans-serif;
-  font-size: 16px;
-  color: #333;
-  background-color: #fff;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-/* =========================
-   Navbar
-   ========================= */
 
-.navbar-default {
-  background-color: #d3d3d3;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 30px;
+/* ==============================
+   NAVBAR
+============================== */
+
+#header-nav {
+    background-color: #999999;
+    border: 2px solid #333333;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar {
+    min-height: 70px;
 }
 
 .navbar-brand {
-  height: auto;
-  padding: 15px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #333 !important;
+    height: 70px;
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222222 !important;
 }
 
-/* Mobile toggle button */
-
-.navbar-default .navbar-toggle {
-  border: 1px solid #333;
-  margin-top: 12px;
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ffffff !important;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #333;
+
+/* Mobile Toggle Button */
+
+.navbar-toggle {
+    margin-top: 17px;
+    border: 2px solid #333333;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #bcbcbc;
+.navbar-toggle .icon-bar {
+    background-color: #333333;
 }
 
-/* =========================
-   Mobile Dropdown
-   ========================= */
+
+/* Mobile Dropdown Menu */
 
 #collapsable-nav {
-  background-color: #d3d3d3;
+    border-top: 1px solid #333333;
 }
 
 #nav-list {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #nav-list li {
-  border-bottom: 1px solid #bcbcbc;
-}
-
-#nav-list li:last-child {
-  border-bottom: none;
+    text-align: center;
+    border-bottom: 1px solid #333333;
 }
 
 #nav-list li a {
-  padding: 12px;
-  color: #333;
-  font-size: 18px;
-  text-align: center;
+    color: #222222;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
 }
 
-#nav-list li a:hover,
-#nav-list li a:focus {
-  background-color: #bcbcbc;
-  color: #000;
+#nav-list li a:hover {
+    background-color: #eeeeee;
+    color: #000000;
 }
 
-/* =========================
-   Page Heading
-   ========================= */
+
+/* ==============================
+   PAGE HEADING
+============================== */
 
 #menu-heading {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 36px;
-  font-weight: 700;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #222222;
 }
 
-/* =========================
-   Menu Section
-   ========================= */
 
-#menu-section {
-  min-height: 1000px;
-  margin-bottom: 50px;
-  padding: 20px;
-  background-color: #bcbcbc;
-  border: 1px solid #999;
+/* ==============================
+   MENU SECTIONS
+============================== */
+
+.menu-section {
+    background-color: #999999;
+    border: 2px solid #333333;
+    padding: 15px;
+    margin-bottom: 30px;
+    min-height: 700px;
 }
 
-#menu-section h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 28px;
-  font-weight: 700;
-  text-align: center;
+.menu-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
-#menu-section p {
-  margin-bottom: 20px;
-  line-height: 1.6;
+.menu-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222222;
+    text-align: justify;
 }
 
-/* =========================
-   Desktop and Tablet
-   ========================= */
+
+/* ==============================
+   BACK TO TOP LINK
+============================== */
+
+.back-to-top {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-weight: bold;
+    color: #0645ad;
+    text-decoration: underline;
+}
+
+.back-to-top:hover {
+    color: #000000;
+}
+
+
+/* ==============================
+   DESKTOP AND TABLET
+============================== */
 
 @media (min-width: 768px) {
-  .navbar-header {
-    float: none;
-  }
 
-  #collapsable-nav {
-    display: none !important;
-  }
+    #collapsable-nav {
+        display: none !important;
+    }
+
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar-brand {
+        padding-left: 15px;
+    }
+
 }
 
-/* =========================
-   Mobile
-   ========================= */
+
+/* ==============================
+   MOBILE
+============================== */
 
 @media (max-width: 767px) {
-  .navbar > .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 
-  #collapsable-nav {
-    margin-right: -15px;
-    margin-left: -15px;
-    padding-right: 0;
-    padding-left: 0;
-    border-top: 1px solid #bcbcbc;
-  }
+    .navbar-brand {
+        font-size: 24px;
+    }
 
-  #nav-list {
-    padding-right: 0;
-    padding-left: 0;
-  }
+    #menu-heading {
+        font-size: 30px;
+    }
 
-  #menu-heading {
-    font-size: 32px;
-  }
+    .menu-section {
+        min-height: 700px;
+        margin-bottom: 25px;
+    }
 
-  #menu-section {
-    padding: 15px;
-  }
 }
